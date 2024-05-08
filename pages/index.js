@@ -1,5 +1,6 @@
-import {NavBar, Footer} from "./permenant";
-import Image from "next/image";
+import NavBar from "./header"
+import Footer from "./footer"
+import Image from "next/image"
 import profilePic from "./assets/Me.jpg"
 
 export default function main() {

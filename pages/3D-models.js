@@ -1,4 +1,4 @@
-import {NavBar, Footer} from "./permenant";
+import {NavBar, Footer} from "./header";
 import Image from 'next/image'
 import Sword from './assets/Sword.gif'
 import Bardiche from './assets/Bardiche.gif'

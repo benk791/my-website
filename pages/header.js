@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-function NavBar() {
+export default function NavBar() {
     return (
     <header>
         <Link href="/"> <p>Home<br />page</p> </Link>
@@ -10,13 +10,3 @@ function NavBar() {
       </header>
       );
 }
-
-function Footer() {
-    return(
-        <footer>
-          <p>B. Kral</p>
-        </footer>
-    )
-}
-
-export {NavBar, Footer};

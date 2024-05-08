@@ -1,4 +1,4 @@
-import {NavBar, Footer} from "./permenant";
+import {NavBar, Footer} from "./header";
 
 export default function main() {
     return (
