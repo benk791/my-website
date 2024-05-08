@@ -13,7 +13,7 @@ export default function main() {
                         <li>Reformat header to look nicer</li>
                         <li>Find a better colour pallette (maybe)</li>
                         <li>Make header have dropdowns / scale to mobile / something like that</li>
-                        <li>Change the recipe to somwthing actually useful</li>
+                        <li>Add more react and node.js tests</li>
                     </ul>
                 </section>
                 <section>
