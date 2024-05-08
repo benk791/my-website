@@ -1,5 +1,6 @@
 import LikeButton from './like-button';
-import {NavBar, Footer} from "./permenant";
+import NavBar from "./header"
+import Footer from "./footer"
  
 function Header({ title }) {
   return <h1>{title ? title : 'Default title'}</h1>;

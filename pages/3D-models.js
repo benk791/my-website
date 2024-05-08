@@ -1,4 +1,5 @@
-import {NavBar, Footer} from "./header";
+import NavBar from "./header"
+import Footer from "./footer"
 import Image from 'next/image'
 import Sword from './assets/Sword.gif'
 import Bardiche from './assets/Bardiche.gif'

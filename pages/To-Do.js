@@ -1,4 +1,5 @@
-import {NavBar, Footer} from "./header";
+import NavBar from "./header"
+import Footer from "./footer"
 
 export default function main() {
     return (
