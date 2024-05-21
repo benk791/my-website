@@ -24,9 +24,8 @@ export default function main() {
                             coding challenge that would be good to showcase.
                         </p>
                         <p>
-                            Also, I've redeployed this website at <Link href="bkral.vercel.app" style={{color:"#F4F1BB", marginRight:0,}}>bkral.vercel.app </Link> 
-                        since it run faster and is easier to deploy to from github. So any new improvements and changes
-                        should hopefully happen there.
+                            Also, I've redeployed this website at bkral.vercel.app since it run faster and is easier to 
+                            deploy to from github. So any new improvements and changes should hopefully happen there.
                         </p>
                     </section>
                 </div>
