@@ -23,10 +23,6 @@ export default function main() {
                             At some point I might also add some recipes, since I created a recipe for a code institue
                             coding challenge that would be good to showcase.
                         </p>
-                        <p>
-                            Also, I've redeployed this website at bkral.vercel.app since it run faster and is easier to 
-                            deploy to from github. So any new improvements and changes should hopefully happen there.
-                        </p>
                     </section>
                 </div>
         </div>
