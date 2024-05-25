@@ -10,7 +10,7 @@ export default function HomePage() {
  
   return (
     <div>
-        <Header />
+        <Header title="testing" />
         <div className="container">
           <section>
             <h2>React Tests</h2>
