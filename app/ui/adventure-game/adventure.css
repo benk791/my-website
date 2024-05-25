@@ -1,0 +1,62 @@
+.MainColumns {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    min-height: 100vh;
+}
+
+.options {
+    align-items: center;
+    margin: 20px;
+}
+
+.eventpanel {
+	display: grid;
+	grid-template-columns: 90px auto;
+    padding: 10px;
+    border: solid;
+    margin: 25px;
+}
+
+.eventpanel img {
+    width: 75px;
+    height: 100px;
+    padding-right: 15px;
+    border: solid;
+}
+
+.eventpanel h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.eventpanel p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.optionpanel {
+    display: grid;
+	grid-template-columns: 90px auto 40px;
+    padding: 10px;
+    border: solid;
+    margin: 25px;
+}
+
+.optionpanel a {
+    color: #5D576B;
+    background-color: #F4F1BB;
+    width: 35px;
+    height: 20px;
+    border: solid;
+    border-color: #E6EBE0;
+}
+
+.optionpanel h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.optionpanel p {
+    margin: 5px;
+}

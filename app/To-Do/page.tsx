@@ -20,8 +20,9 @@ export default function main() {
                     <li>links to itch.io projects</li>
                     <li>Maybe drawing progress, if I ever do enough to make it worth it</li>
                     <li>More recipes, and like a content page type thing (maybe even a fun recipe book situation if I can work that out)</li>
+                    <li>fallen london / a dark room style game thing</li>
                 </ul>
             </section>
         </div>
-      );
+      )
 }

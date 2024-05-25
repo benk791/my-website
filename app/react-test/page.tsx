@@ -1,5 +1,5 @@
 import LikeButton from '../ui/like-button';
-import Footer from "@/app/ui/footer"
+import Footer from "../ui/footer"
  
 function Header({ title }: {title: string}) {
   return <h1>{title ? title : 'Default title'}</h1>;
