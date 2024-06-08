@@ -1,0 +1,1 @@
+export var Stats = [['Health', '10', 'color: red;'], ['Strength', '5', 'color: red;'], ['Intelligence', '5', 'color: red;']];

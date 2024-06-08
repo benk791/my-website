@@ -1,8 +1,11 @@
 import Event from "@/app/ui/adventure-game/event"
 import Option from "@/app/ui/adventure-game/option"
 import { BoltIcon, ScaleIcon } from "@heroicons/react/16/solid"
+import { Stats } from "@/public/adventure-game/Global variables"
 
 function Main() {
+    var link2 = (parseInt(Stats[1][1]) > 6) ? "/adventure-game/event3" : "/adventure-game/eventFailTest"
+
     return(
         <div>
             <Event
@@ -21,7 +24,8 @@ function Main() {
                     Icon = { BoltIcon }
                     title = "or try this"
                     content = "what could this possibly do"
-                    link = "/adventure-game/event3"
+                    check = { [1,5] }
+                    link = { link2 }
                 />
             </div>
         </div>

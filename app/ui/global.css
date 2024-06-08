@@ -7,6 +7,11 @@ body {
     padding: 0;
 }
 
+canvas {
+	border: solid;
+    border-color: #E6EBE0;
+}
+
 h1 {
 	font-size: 300%;	
     color: #F4F1BB;
@@ -38,11 +43,18 @@ button {
 }
 
 a {
-    color: #5D576B;
 	text-align: center;
 	text-decoration: none;
 	margin-right: 0px;
 	margin-left: 0px;
+}
+
+.MidTextLink {
+	color:#F4F1BB
+}
+
+.MidTextLink:hover {
+	color:#ED6A5A
 }
 
 header {
@@ -56,6 +68,7 @@ header {
 }
 
 header p {
+	color: #5D576B;
 	padding: 15px;
 	margin: 0px;
 }
@@ -90,6 +103,12 @@ footer p {
 .SideBySide {
 	display: grid;
 	grid-template-columns: 50% 50%;
+}
+
+.screenSelection {
+	margin: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
 .SideBySide section {
