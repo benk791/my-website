@@ -4,7 +4,7 @@ import { BoltIcon, ScaleIcon } from "@heroicons/react/16/solid"
 import { Stats } from "@/public/adventure-game/Global variables"
 
 function Main() {
-    var link2 = (parseInt(Stats[1][1]) > 6) ? "/adventure-game/event3" : "/adventure-game/eventFailTest"
+    var link2 = (parseInt(Stats[1][1]) >= 6) ? "/adventure-game/event3" : "/adventure-game/eventFailTest"
 
     return(
         <div>
@@ -23,7 +23,7 @@ function Main() {
                 <Option
                     Icon = { BoltIcon }
                     title = "or try this"
-                    content = "what could this possibly do"
+                    content = "with a little stat check for fun"
                     check = { [1,5] }
                     link = { link2 }
                 />

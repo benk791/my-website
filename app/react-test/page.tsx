@@ -10,6 +10,7 @@ function Header({ title }: {title: string}) {
 export default function HomePage() {
   const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
+  /*
   function SpaceInvaders() {
     document.getElementById("gameScript")!.setAttribute( 'src', "Space Invader.js" )
     console.log("space")
@@ -18,6 +19,7 @@ export default function HomePage() {
     document.getElementById("gameScript")!.setAttribute( 'src', "Sparks.js" )
     console.log("spark")
   }
+    */
 
   return (
     <div>
@@ -28,8 +30,12 @@ export default function HomePage() {
             <h2>Menu bar shenanigans</h2>
             <p>not currently functional</p>
             <ul>
-              <li><button onClick={SpaceInvaders}>Space Invader</button></li>
-              <li><button onClick={Spark}>sparks</button></li>
+              <li><button>Space Invader</button></li> {
+              //onClick={SpaceInvaders}
+              }
+              <li><button>sparks</button></li> {
+              //onClick={Spark}
+              }
             </ul>
           </section>
           <canvas id="screen" width="500" height="300"/>

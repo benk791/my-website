@@ -23,7 +23,14 @@ export default function main() {
                     <li>links to itch.io projects</li>
                     <li>Maybe drawing progress, if I ever do enough to make it worth it</li>
                     <li>add recipes backs, and like a content page type thing (maybe even a fun recipe book situation if I can work that out)</li>
-                    <li>fallen london / a dark room style game thing <Link href="/adventure-game" className="MidTextLink"> (being tested here)</Link></li>
+                    <li>fallen london / a dark room style game thing <Link href="/adventure-game" className="MidTextLink"> (being tested here)</Link>
+                        <ul>
+                            <li>improve option.tsx code (feels very inefficient at the moment)</li>
+                            <li>add ways to change stats</li>
+                            <li>add inventory and ways to find items</li>
+                            <li>add more events and story (big task)</li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
         </div>
