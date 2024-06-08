@@ -27,9 +27,9 @@ export default function HomePage() {
         <div className="container">
         <div className='screenSelection'>
           <section>
-            <p>you need to reload the ge to get the game to show up <br />
-            (controls are left and right arrow keys, and f to fire) <br />
-            menu bar not currently functional</p>
+            <p>This page is a bit messy, you might need to reload the page to get the game to show up <br/><br/>
+            (controls are left and right arrow keys and F) <br/><br/>
+            the menu bar not currently functional</p>
             <h2>Menu bar shenanigans</h2>
             <ul>
               <li><button>Space Invader</button></li> {

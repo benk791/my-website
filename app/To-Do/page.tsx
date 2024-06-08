@@ -10,7 +10,7 @@ export default function main() {
                     <li>Reformat header to look nicer</li>
                     <li>Find a better colour pallette (maybe, this one is growing on me)</li>
                     <li>Make header have dropdowns / scale to mobile / something like that</li>
-                    <li>Add more react and node.js tests</li>
+                    <li>Add more react and next.js tests</li>
                     <li>Remake and reimport the earlier 3D model gifs, without the strage shading/conversion artifacts</li>
                     <li>fix canvas code switch in react tests</li>
                 </ul>
