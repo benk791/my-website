@@ -7,13 +7,12 @@ export default function main() {
       <section>
         <h2>Stuff to do on the website</h2>
         <ul className="list-disc">
-          <li>Reformat header to look nicer</li>
-          <li>Find a better colour pallette (maybe, this one is growing on me)</li>
           <li>Make header have dropdowns / scale to mobile / something like that</li>
           <li>Add more react and next.js tests</li>
           <li>Remake and reimport the earlier 3D model gifs, without the strage shading/conversion artifacts</li>
           <li>Fix canvas code switch in react tests</li>
           <li>Maybe add / sort out a server for some of this stuff</li>
+          <li>fix footer rising up issue</li>
         </ul>
       </section>
       <section>
