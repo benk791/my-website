@@ -4,11 +4,17 @@ import LikeButton from "../ui/like-button";
 import { useState } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const localHealth = JSON.parse(localStorage.getItem("health") ?? "{}");
-  const localStrength = JSON.parse(localStorage.getItem("strength") ?? "{}");
-  const localIntelligence = JSON.parse(localStorage.getItem("intelligence") ?? "{}");
+  //  const localHealth = JSON.parse(localStorage.getItem("health") ?? "{}");
+  //  const localStrength = JSON.parse(localStorage.getItem("strength") ?? "{}");
+  //  const localIntelligence = JSON.parse(localStorage.getItem("intelligence") ?? "{}");
 
-  const stats = [localHealth, localStrength, localIntelligence];
+  //  const stats = [localHealth, localStrength, localIntelligence];
+  var stats = [
+    ["Health", "10", "color: red;"],
+    ["Strength", "5", "color: green;"],
+    ["Intelligence", "5", "color: blue;"],
+  ];
+
   return (
     <div className="grid grid-cols-5">
       <div className="p-5">
@@ -16,8 +22,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <p>theres gonna be a bunch of stats and stuff here, maybe like a character bio or something aswell</p>
         <ul className="margintop-50">
           {stats.map((stat) => (
-            <li key={stat.name}>
-              {stat.name} : {stat.value}
+            <li key={stat[0]}>
+              {stat[0]} : {stat[1]}
             </li>
           ))}
         </ul>

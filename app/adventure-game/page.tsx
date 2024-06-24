@@ -11,25 +11,22 @@ const initialStrength = { name: "Strength", value: 4, color: "green" };
 const initialIntelligence = { name: "Intelligence", value: 4, color: "blue" };
 
 function Main() {
-  var link2 =
-    parseInt(Stats[1][1]) >= 5
-      ? "/adventure-game/event3"
-      : "/adventure-game/eventFailTest";
+  var link2 = parseInt(Stats[1][1]) >= 5 ? "/adventure-game/event3" : "/adventure-game/eventFailTest";
 
-  useEffect(() => {
-    const health = localStorage.getItem("health");
-    const strength = localStorage.getItem("strength");
-    const intelligence = localStorage.getItem("intelligence");
-    if (!health) {
-      localStorage.setItem("health", JSON.stringify(initialHealth));
-    }
-    if (!strength) {
-      localStorage.setItem("strength", JSON.stringify(initialStrength));
-    }
-    if (!intelligence) {
-      localStorage.setItem("intelligence", JSON.stringify(initialIntelligence));
-    }
-  }, []);
+  //useEffect(() => {
+  //  const health = localStorage.getItem("health");
+  //const strength = localStorage.getItem("strength");
+  //  const intelligence = localStorage.getItem("intelligence");
+  //  if (!health) {
+  //    localStorage.setItem("health", JSON.stringify(initialHealth));
+  //  }
+  //  if (!strength) {
+  //    localStorage.setItem("strength", JSON.stringify(initialStrength));
+  //  }
+  //  if (!intelligence) {
+  //    localStorage.setItem("intelligence", JSON.stringify(initialIntelligence));
+  //  }
+  //}, []);
 
   return (
     <div>
