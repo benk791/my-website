@@ -6,7 +6,7 @@ export default function main() {
             <h1>What's up with this website</h1>
             <div className="SideBySide">
                 <Image
-                    src="/Me.jpg"
+                    src="/Me.png"
                     width={600}
                     height={600}
                     alt="A cute Picrew I made"

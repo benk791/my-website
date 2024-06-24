@@ -10,12 +10,19 @@
         var tick = function() {
             self.update();
 
-            canvas.addEventListener('mousemove', (e) => {
-                var MousePos = { x: e.clientX, y: e.clientY}
-                canvas.addEventListener('mousedown', event => {
-                    var fire = new Fire (MousePos);
-                    self.addBody(fire);
-                })
+            var cursor_x = -1;
+            var cursor_y = -1;
+            document.onmousemove = function(event)
+            {
+            cursor_x = event.pageX;
+            cursor_y = event.pageY;
+            }
+            setInterval(check_cursor, 1000);
+            function check_cursor(){console.log('Cursor at: '+cursor_x+', '+cursor_y);}
+
+            canvas.addEventListener('mousedown', event => {
+                var fire = new Fire ({ x: cursor_x, y: cursor_y});
+                self.addBody(fire);
             });
 
             self.draw(screen, gameSize);

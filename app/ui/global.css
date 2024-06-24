@@ -1,7 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--theme-primary: #182846;
+	--theme-secondary: #856E99;
+	--theme-tertiary: #2E5D74;
+	--theme-text: #9F9F9F;
+	--theme-highlight: #FFB3E3;
+  }
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #E6EBE0;
-    background-color: #5D576B;
+	color: var(--theme-text);
+    background-color: var(--theme-primary);
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -9,18 +21,24 @@ body {
 
 canvas {
 	border: solid;
-    border-color: #E6EBE0;
+    border-color: var(--theme-text);
 }
 
 h1 {
+	font-weight: bold;
 	font-size: 300%;	
-    color: #F4F1BB;
+    color: var(--theme-secondary);
 	text-transform: uppercase;
     text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 h2 {
-    color: #F4F1BB;
+	font-size: x-large;
+	font-weight: bold;
+	padding-bottom: 2%;
+    color: var(--theme-secondary);
 }
 
 section {
@@ -29,7 +47,7 @@ section {
 
 section:hover {
 	h2 {
-		color: #ED6A5A;
+		color: var(--theme-highlight);
 	}
 }
 
@@ -40,6 +58,9 @@ img {
 
 button {
 	text-align: center;
+	color: var(--theme-primary);
+	background-color: var(--theme-secondary);
+	
 }
 
 a {
@@ -50,16 +71,16 @@ a {
 }
 
 .MidTextLink {
-	color:#F4F1BB
+	color:var(--theme-secondary)
 }
 
 .MidTextLink:hover {
-	color:#ED6A5A
+	color:var(--theme-highlight)
 }
 
 header {
-	background-color: #F4F1BB;
-	color: #5D576B;
+	background-color: var(--theme-secondary);
+	color: var(--theme-primary);
   	width: 100%-15px;
 	padding: 15px;
 	display: grid;
@@ -68,20 +89,19 @@ header {
 }
 
 header p {
-	color: #5D576B;
 	padding: 15px;
 	margin: 0px;
 }
 
 header p:hover {
-	background-color: #5D576B;
-	color: #E6EBE0;
+	background-color: var(--theme-primary);
+	color: var(--theme-secondary);
 }
 
 footer {
 	margin-top: 70px;
-	background-color: #F4F1BB;
-	color: #5D576B;
+	background-color: var(--theme-secondary);
+	color: var(--theme-primary);
     width: 100%;
     position: absolute;
 }

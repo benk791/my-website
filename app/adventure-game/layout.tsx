@@ -1,31 +1,39 @@
-import "@/app/ui/adventure-game/adventure.css"
-import LikeButton from "../ui/like-button"
-import { Stats } from  "@/public/adventure-game/Global variables"
+"use client";
+
+import LikeButton from "../ui/like-button";
+import { useState } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-    return(
-        <div className="MainColumns">
-            <div>
-                <h3>Stats</h3>
-                <p>theres gonna be a bunch of stats and stuff here, maybe like a character bio or something aswell</p>
-                <ul>
-                    {Stats.map((stats) => (
-                    <li key={stats[0]}> {stats[0]} : {stats[1]} </li>
-                    ))}
-                </ul>
-            </div>
-            {children}
-            <div>
-                <p>
-                    I dont really know what goes here, maybe navigation, or more stats, we'll work something out,
-                    in the meantime have a like button:
-                </p>
-                <LikeButton />
-                <p>
-                    actually I think an inventory type thing might be good here, I'll need to work out how to do
-                    global variables like in Godot though
-                </p>
-            </div>
-        </div>
-    )
+  const localHealth = JSON.parse(localStorage.getItem("health") ?? "{}");
+  const localStrength = JSON.parse(localStorage.getItem("strength") ?? "{}");
+  const localIntelligence = JSON.parse(localStorage.getItem("intelligence") ?? "{}");
+
+  const stats = [localHealth, localStrength, localIntelligence];
+  return (
+    <div className="grid grid-cols-5">
+      <div className="p-5">
+        <h3 className="text-themeSecondary text-xl font-bold py-1">Stats</h3>
+        <p>theres gonna be a bunch of stats and stuff here, maybe like a character bio or something aswell</p>
+        <ul className="margintop-50">
+          {stats.map((stat) => (
+            <li key={stat.name}>
+              {stat.name} : {stat.value}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="col-span-3">{children}</div>
+      <div className="p-5">
+        <p>
+          I dont really know what goes here, maybe navigation, or more stats, we'll work something out, in the meantime
+          have a like button:
+        </p>
+        <LikeButton />
+        <p>
+          actually I think an inventory type thing might be good here, I'll need to work out how to do global variables
+          like in Godot though
+        </p>
+      </div>
+    </div>
+  );
 }
