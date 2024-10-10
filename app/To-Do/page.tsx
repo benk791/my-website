@@ -27,9 +27,8 @@ export default function main() {
             that out)
           </li>
           <li>
-            Fallen london / a dark room style game thing{" "}
+            Fallen london / a dark room style game thing
             <Link href="/adventure-game" className="MidTextLink">
-              {" "}
               (being tested here)
             </Link>
             <ul className="list-disc list-inside">

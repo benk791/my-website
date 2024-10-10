@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <header className="leading-none">
-      <div className="grid grid-cols-5 w-2/6">
+      <div className="grid grid-cols-6 md:grid-cols-12">
         <Link href="/">
           <p>
             Home
@@ -37,6 +37,13 @@ export default function NavBar() {
             Itch.io
             <br />
             Games
+          </p>
+        </Link>
+        <Link href="/style-guide">
+          <p>
+            Style
+            <br />
+            Guide
           </p>
         </Link>
       </div>

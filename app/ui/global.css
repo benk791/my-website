@@ -81,7 +81,6 @@ a {
 header {
 	background-color: var(--theme-secondary);
 	color: var(--theme-primary);
-  	width: 100%-15px;
 	padding: 15px;
 	font-size: 100%;
 }
@@ -136,6 +135,23 @@ footer p {
 .showcase {
 	margin: 15px;
 	text-align: center;
+}
+
+.colours {
+	background-color: white;
+	color: black;
+}
+
+.colour-box {
+	text-align: center;
+
+	h3 {
+		font-size: 18px;
+	}
+
+	h4 {
+		font-size: 15px;
+	}
 }
 
 #pfp {
