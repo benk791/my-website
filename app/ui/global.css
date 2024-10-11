@@ -106,6 +106,10 @@ header p:hover {
 	color: var(--theme-secondary);
 }
 
+header p:active {
+	color: var(--theme-tertiary);
+}
+
 footer {
 	margin-top: 70px;
 	background-color: var(--theme-secondary);
@@ -155,6 +159,9 @@ footer p {
 
 .colour-box {
 	text-align: center;
+	width: 200px;
+	margin: 5px;
+
 
 	h3 {
 		font-size: 18px;
