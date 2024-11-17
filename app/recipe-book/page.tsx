@@ -33,8 +33,9 @@ export default function Main() {
                   header="Chocolate Scrolls"
                   link="/recipe-book/chocolate-scrolls"
                 />
-                {new Array(8).fill(0).map(() => (
+                {new Array(8).fill(0).map((_, i) => (
                   <RecipeCard
+                    key={i}
                     imgSrc="/adventure-game/fox refrencce.jpg"
                     imgAlt="Template Card"
                     header="Template Card"
@@ -49,8 +50,9 @@ export default function Main() {
                 Breakfast
               </h2>
               <div className="flex flex-wrap justify-between p-10 pb-0">
-                {new Array(8).fill(0).map(() => (
+                {new Array(8).fill(0).map((_, i) => (
                   <RecipeCard
+                    key={i}
                     imgSrc="/adventure-game/fox refrencce.jpg"
                     imgAlt="Template Card"
                     header="Template Card"
@@ -65,8 +67,9 @@ export default function Main() {
                 Meals
               </h2>
               <div className="flex flex-wrap justify-between p-10 pb-0">
-                {new Array(8).fill(0).map(() => (
+                {new Array(8).fill(0).map((_, i) => (
                   <RecipeCard
+                    key={i}
                     imgSrc="/adventure-game/fox refrencce.jpg"
                     imgAlt="Template Card"
                     header="Template Card"
