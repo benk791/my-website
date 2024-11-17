@@ -46,6 +46,13 @@ export default function NavBar() {
             Guide
           </p>
         </Link>
+        <Link href="/recipe-book">
+          <p>
+            Recipe
+            <br />
+            Book
+          </p>
+        </Link>
       </div>
     </header>
   );

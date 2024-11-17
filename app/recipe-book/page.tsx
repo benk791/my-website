@@ -33,6 +33,18 @@ export default function Main() {
                   header="Chocolate Scrolls"
                   link="/recipe-book/chocolate-scrolls"
                 />
+                <RecipeCard
+                  imgSrc="/recipe-book/Babka.jpg"
+                  imgAlt="Babka"
+                  header="Babka"
+                  link="/recipe-book/babka"
+                />
+                <RecipeCard
+                  imgSrc="/recipe-book/ChocMouseCake.jpg"
+                  imgAlt="Chocolate Mousse Cake"
+                  header="Chocolate Mousse Cake"
+                  link="/recipe-book/chocolate-mousse-cake"
+                />
                 {new Array(8).fill(0).map((_, i) => (
                   <RecipeCard
                     key={i}
