@@ -74,7 +74,7 @@ const babka = {
 
 const chocMousseCake = {
   title: "Chocolate Mousse Cake",
-  imgSrc: "/recipe-book/ChocMouseCake",
+  imgSrc: "/recipe-book/ChocMouseCake.jpg",
   imgAlt: "Chocolate Mousse Cake",
   ingredients: [ {items: [""]}],
   instructions: [""],
@@ -84,8 +84,8 @@ const eggsBenedict = {
   title: "Eggs Benedict",
   imgSrc: "/recipe-book/EggsBen.jpg",
   imgAlt: "eggs Benedict",
-  ingredients: ["eggs", "butter", "vinegar"],
-  instructions: [{items: ["mix", "blend", "pour"]}],
+  ingredients: [{items: ["eggs", "butter", "vinegar"]}],
+  instructions: ["mix", "blend", "pour"],
 };
 
 export const recipes = {
