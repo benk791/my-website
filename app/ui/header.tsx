@@ -18,6 +18,13 @@ export default function NavBar() {
             Models
           </p>
         </Link>
+        <Link href="/recipe-book">
+          <p>
+            Recipe
+            <br />
+            Book
+          </p>
+        </Link>
         <Link href="/To-Do">
           <p>
             To do
@@ -25,6 +32,7 @@ export default function NavBar() {
             list
           </p>
         </Link>
+        {/*
         <Link href="/react-test">
           <p>
             "React"
@@ -32,13 +40,7 @@ export default function NavBar() {
             Tests
           </p>
         </Link>
-        <Link href="/itchio-games">
-          <p>
-            Itch.io
-            <br />
-            Games
-          </p>
-        </Link>
+        */}
         <Link href="/style-guide">
           <p>
             Style
@@ -46,11 +48,11 @@ export default function NavBar() {
             Guide
           </p>
         </Link>
-        <Link href="/recipe-book">
+        <Link href="/games/itchio-games">
           <p>
-            Recipe
+            Itch.io
             <br />
-            Book
+            Games
           </p>
         </Link>
       </div>

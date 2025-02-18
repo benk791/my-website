@@ -6,8 +6,8 @@ export default function Main() {
     <div>
       <h1>Recipes</h1>
       <div className="flex">
-        <div className="w-1/5">
-          <section className="sticky top-10">
+        <div className="w-0 md:w-1/5">
+          <section className="sticky top-10 invisible md:visible">
             <h2 className="text-right">Index</h2>
             <ul>
               <SidebarLink link="#top" name="Baking" />
@@ -17,7 +17,7 @@ export default function Main() {
             </ul>
           </section>
         </div>
-        <div className="grid grid-cols-8 w-4/5">
+        <div className="md:grid md:grid-cols-8 w-full md:w-4/5">
           <div className="col-span-6">
             <div>
               <h2
@@ -27,12 +27,6 @@ export default function Main() {
                 Baking
               </h2>
               <div className="flex flex-wrap justify-between p-10 pb-0">
-                <RecipeCard
-                  imgSrc="/recipe-book/ChocScrolls.jpg"
-                  imgAlt="chocolate scrolls"
-                  header="Chocolate Scrolls"
-                  link="/recipe-book/chocolate-scrolls"
-                />
                 <RecipeCard
                   imgSrc="/recipe-book/Babka.jpg"
                   imgAlt="Babka"
@@ -45,15 +39,12 @@ export default function Main() {
                   header="Chocolate Mousse Cake"
                   link="/recipe-book/chocolate-mousse-cake"
                 />
-                {new Array(8).fill(0).map((_, i) => (
-                  <RecipeCard
-                    key={i}
-                    imgSrc="/adventure-game/fox refrencce.jpg"
-                    imgAlt="Template Card"
-                    header="Template Card"
-                    link=""
-                  />
-                ))}
+                <RecipeCard
+                  imgSrc="/recipe-book/ChocScrolls.jpg"
+                  imgAlt="chocolate scrolls"
+                  header="Chocolate Scrolls"
+                  link="/recipe-book/chocolate-scrolls"
+                />
               </div>
               <h2
                 className="text-center text-4xl border-b-2 border-themeText ml-10 mr-10 pb-2 sticky top-0 bg-themePrimary"
@@ -62,15 +53,12 @@ export default function Main() {
                 Breakfast
               </h2>
               <div className="flex flex-wrap justify-between p-10 pb-0">
-                {new Array(8).fill(0).map((_, i) => (
-                  <RecipeCard
-                    key={i}
-                    imgSrc="/adventure-game/fox refrencce.jpg"
-                    imgAlt="Template Card"
-                    header="Template Card"
-                    link=""
-                  />
-                ))}
+                <RecipeCard
+                  imgSrc="/recipe-book/EggsBen.jpg"
+                  imgAlt="Eggs Benedict"
+                  header="Eggs Benedict"
+                  link="/recipe-book/eggs-benedict"
+                />
               </div>
               <h2
                 className="text-center text-4xl border-b-2 border-themeText ml-10 mr-10 pb-2 sticky top-0 bg-themePrimary"
@@ -79,15 +67,12 @@ export default function Main() {
                 Meals
               </h2>
               <div className="flex flex-wrap justify-between p-10 pb-0">
-                {new Array(8).fill(0).map((_, i) => (
-                  <RecipeCard
-                    key={i}
-                    imgSrc="/adventure-game/fox refrencce.jpg"
-                    imgAlt="Template Card"
-                    header="Template Card"
-                    link=""
-                  />
-                ))}
+                <RecipeCard
+                  imgSrc="/recipe-book/template.jpg"
+                  imgAlt="Baked Orzo Puttanesca"
+                  header="Baked Orzo Puttanesca"
+                  link="/recipe-book/baked-orzo-puttanesca"
+                />
               </div>
               <h2
                 className="text-center text-4xl border-b-2 border-themeText ml-10 mr-10 pb-2 sticky top-0 bg-themePrimary"
@@ -95,68 +80,7 @@ export default function Main() {
               >
                 Desserts
               </h2>
-              <div className="flex flex-wrap justify-between p-10 pb-0">
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-                <RecipeCard
-                  imgSrc="/adventure-game/fox refrencce.jpg"
-                  imgAlt="Template Card"
-                  header="Template Card"
-                  link=""
-                />
-              </div>
+              <div className="flex flex-wrap justify-between p-10 pb-0"></div>
             </div>
           </div>
         </div>

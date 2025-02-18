@@ -7,11 +7,19 @@ interface props {
   title: string;
   imgSrc: string;
   imgAlt: string;
+  serving?: string;
   ingredients: Array<{ title?: string; items: Array<string> }>;
-  instructions: Array<string>;
+  instructions: Array<{ title?: string; items: Array<string> }>;
 }
 
-export default function RecipeBase({ title, imgSrc, imgAlt, ingredients, instructions }: props) {
+export default function RecipeBase({
+  title,
+  imgSrc,
+  imgAlt,
+  serving,
+  ingredients,
+  instructions,
+}: props) {
   const router = useRouter();
   if (!title) {
     router.push("/recipe-book");
@@ -20,14 +28,22 @@ export default function RecipeBase({ title, imgSrc, imgAlt, ingredients, instruc
   return (
     <div className="container">
       <h1>{title}</h1>
-      <div className="grid grid-cols-5">
-        <section className="pr-5">
-          <h2 className="text-right">Ingredients</h2>
+      <Image
+        src={imgSrc}
+        width="200"
+        height="200"
+        alt={imgAlt}
+        className="pb-4 md:h-0 object-cover visible md:invvisible"
+      />
+      <h3 className="pb-0">{serving}</h3>
+      <div className="md:grid md:grid-cols-5">
+        <section className="pr-5 mb-2">
+          <h2 className="text-left">Ingredients</h2>
           <ul>
             {ingredients.map((section, i) => (
               <li key={section.title ?? i} className="mb-2">
-                {section.title && <h3 className="mt-5">{section.title}</h3>}
-                <ul>
+                {section.title && <h3>{section.title}</h3>}
+                <ul className="mb-5">
                   {section.items.map((item) => (
                     <li key={item} className="ml-3 mb-1 list-disc">
                       {item}
@@ -38,18 +54,31 @@ export default function RecipeBase({ title, imgSrc, imgAlt, ingredients, instruc
             ))}
           </ul>
         </section>
-        <section className="col-span-4 border-l-2 px-5">
-          <h2>Instructions</h2>
-          <ol className="list-decimal">
-            <div className="float-right w-[250px] h-[250px] pb-5 pl-5">
-              <Image src={imgSrc} width="200" height="200" alt={imgAlt} />
+        <section className="col-span-4 md:border-l-2 md:px-5">
+          <h2 className="pb-0">Instructions</h2>
+          <ul>
+            <div className="float-right pb-5 pl-5">
+              <Image
+                src={imgSrc}
+                width="200"
+                height="200"
+                alt={imgAlt}
+                className="md:w-[250px] md:h-[250px] h-0 object-cover invisible md:visible"
+              />
             </div>
-            {instructions.map((instruction) => (
-              <li key={instruction} className="mb-2 ml-5">
-                {instruction}
+            {instructions.map((section, instruction) => (
+              <li key={section.title ?? instruction}>
+                {section.title && <h3 className="pb-2">{section.title}</h3>}
+                <ol className="pb-2">
+                  {section.items.map((item) => (
+                    <li key={item} className="mb-2 ml-5 list-decimal">
+                      {item}
+                    </li>
+                  ))}
+                </ol>
               </li>
             ))}
-          </ol>
+          </ul>
         </section>
       </div>
     </div>
