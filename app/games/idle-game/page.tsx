@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { BookOpenIcon, UsersIcon } from "@heroicons/react/24/outline";
 import BasicButton from "@/app/ui/idle-game/BasicButton";
-export default function main() {
+export default function Main() {
   const [int, setInt] = useState(0);
   const [increase, setIncrease] = useState(1);
   const [intReq, setIntReq] = useState(5);
