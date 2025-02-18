@@ -1,4 +1,5 @@
-"use client";
+{
+  /*"use client";
 
 import { useState } from "react";
 import { BookOpenIcon, UsersIcon } from "@heroicons/react/24/outline";
@@ -123,4 +124,6 @@ export default function Main() {
       </div>
     </div>
   );
+}
+*/
 }
