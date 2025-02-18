@@ -1,3 +1,7 @@
+export default function Main() {
+  return <div></div>;
+}
+
 {
   /*"use client";
 
